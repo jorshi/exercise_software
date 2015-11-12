@@ -16,7 +16,7 @@ TreadmillPrototype::TreadmillPrototype()
 
 TreadmillPrototype::TreadmillPrototype(const TreadmillPrototype& other)
 {
-    this->setType(other.type);
+    this->setType(other.getType());
 }
 
 EquipmentPrototype* TreadmillPrototype::clone() const

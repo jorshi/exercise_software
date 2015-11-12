@@ -11,10 +11,10 @@
 
 void EquipmentPrototype::setType(std::string t)
 {
-    this->type = t;
+    _type = t;
 }
 
-std::string EquipmentPrototype::getType()
+std::string EquipmentPrototype::getType() const
 {
-    return this->type;
+    return _type;
 }

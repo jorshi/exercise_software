@@ -15,14 +15,15 @@
 
 class EquipmentPrototype
 {
+
 public:
     virtual EquipmentPrototype* clone() const = 0;
-    void setType(std::string);
-    std::string getType();
+    virtual void setType(std::string);
+    virtual std::string getType() const;
     
 protected:
-    std::string type;
-    std::string desciption;
+    std::string _type;
+    std::string _desciption;
 
 };
 

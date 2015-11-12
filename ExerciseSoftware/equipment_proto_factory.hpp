@@ -14,13 +14,17 @@
 #include "bike_prototype.hpp"
 #include "equipment_prototype.hpp"
 
+enum EquipmentType
+{
+    bike, treadmill
+};
 
 class EquipmentProtoFactory
 {
 
 public:
     EquipmentProtoFactory();
-    EquipmentPrototype* getBike();
+    EquipmentPrototype* getEquipment(enum EquipmentType);
 
     
 private:

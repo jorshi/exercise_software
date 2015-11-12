@@ -15,7 +15,7 @@ BikePrototype::BikePrototype()
 
 BikePrototype::BikePrototype(const BikePrototype& other)
 {
-    this->setType(other.type);
+    this->setType(other.getType());
 }
 
 EquipmentPrototype* BikePrototype::clone() const

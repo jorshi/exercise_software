@@ -14,8 +14,7 @@
 int main(int argc, const char * argv[]) {
     
     EquipmentProtoFactory equipmentFactory;
-    EquipmentPrototype* e1 = equipmentFactory.getBike();
-    std::cout << e1->getType();
+
     
     return 0;
 }

@@ -14,7 +14,14 @@ EquipmentProtoFactory::EquipmentProtoFactory()
     this->_treadmill = new TreadmillPrototype;
 }
 
-EquipmentPrototype* EquipmentProtoFactory::getBike()
+EquipmentPrototype* EquipmentProtoFactory::getEquipment(EquipmentType type)
 {
-    return _bike->clone();
+    switch (type) {
+        case bike:
+            return _bike->clone();
+            break;
+        case treadmill:
+            return _treadmill->clone();
+            break;
+    }
 }
