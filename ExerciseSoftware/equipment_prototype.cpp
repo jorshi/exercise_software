@@ -18,3 +18,13 @@ std::string EquipmentPrototype::getType() const
 {
     return _type;
 }
+
+void EquipmentPrototype::setId(int i)
+{
+    _id = i;
+}
+
+int EquipmentPrototype::getId() const
+{
+    return _id;
+}

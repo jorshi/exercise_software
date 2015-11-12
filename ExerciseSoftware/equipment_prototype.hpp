@@ -20,8 +20,11 @@ public:
     virtual EquipmentPrototype* clone() const = 0;
     virtual void setType(std::string);
     virtual std::string getType() const;
+    virtual void setId(int);
+    virtual int getId() const;
     
 protected:
+    int _id;
     std::string _type;
     std::string _desciption;
 

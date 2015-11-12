@@ -10,6 +10,8 @@
 #define equipment_proto_factory_hpp
 
 #include <stdio.h>
+#include <string>
+#include <map>
 #include "treadmill_prototype.hpp"
 #include "bike_prototype.hpp"
 #include "equipment_prototype.hpp"
@@ -25,11 +27,14 @@ class EquipmentProtoFactory
 public:
     EquipmentProtoFactory();
     EquipmentPrototype* getEquipment(enum EquipmentType);
-
+    EquipmentType getEquipmentType(std::string);
+    std::string getTypes();
     
 private:
+    static std::map<std::string, EquipmentType> _type;
     BikePrototype* _bike;
     TreadmillPrototype* _treadmill;
+    int _equipmentId;
 };
 
 #endif /* equipment_proto_factory_hpp */
