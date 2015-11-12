@@ -11,6 +11,7 @@
 #include <map>
 #include "equipment_proto_factory.hpp"
 #include "equipment_prototype.hpp"
+#include "exercise_equipment.pb.h"
 
 
 int main(int argc, const char * argv[]) {
