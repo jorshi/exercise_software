@@ -10,19 +10,20 @@
 #define equipment_prototype_hpp
 
 #include <stdio.h>
-
-#endif /* equipment_prototype_hpp */
+#include <string>
 
 
 class EquipmentPrototype
 {
 public:
     virtual EquipmentPrototype* clone() const = 0;
+    void setType(std::string);
+    std::string getType();
     
 protected:
-    virtual int getId();
-    
-private:
-    int id;
-    
+    std::string type;
+    std::string desciption;
+
 };
+
+#endif /* equipment_prototype_hpp */

@@ -11,6 +11,7 @@
 		313485AE1BF4178C00D04B5B /* equipment_prototype.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 313485AC1BF4178C00D04B5B /* equipment_prototype.cpp */; settings = {ASSET_TAGS = (); }; };
 		313485B11BF417DF00D04B5B /* treadmill_prototype.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 313485AF1BF417DF00D04B5B /* treadmill_prototype.cpp */; settings = {ASSET_TAGS = (); }; };
 		313485B41BF4297E00D04B5B /* bike_prototype.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 313485B21BF4297E00D04B5B /* bike_prototype.cpp */; settings = {ASSET_TAGS = (); }; };
+		313485B71BF4373A00D04B5B /* equipment_proto_factory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 313485B51BF4373A00D04B5B /* equipment_proto_factory.cpp */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,6 +35,8 @@
 		313485B01BF417DF00D04B5B /* treadmill_prototype.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = treadmill_prototype.hpp; sourceTree = "<group>"; };
 		313485B21BF4297E00D04B5B /* bike_prototype.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bike_prototype.cpp; sourceTree = "<group>"; };
 		313485B31BF4297E00D04B5B /* bike_prototype.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = bike_prototype.hpp; sourceTree = "<group>"; };
+		313485B51BF4373A00D04B5B /* equipment_proto_factory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = equipment_proto_factory.cpp; sourceTree = "<group>"; };
+		313485B61BF4373A00D04B5B /* equipment_proto_factory.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = equipment_proto_factory.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +76,8 @@
 				313485B01BF417DF00D04B5B /* treadmill_prototype.hpp */,
 				313485B21BF4297E00D04B5B /* bike_prototype.cpp */,
 				313485B31BF4297E00D04B5B /* bike_prototype.hpp */,
+				313485B51BF4373A00D04B5B /* equipment_proto_factory.cpp */,
+				313485B61BF4373A00D04B5B /* equipment_proto_factory.hpp */,
 			);
 			path = ExerciseSoftware;
 			sourceTree = "<group>";
@@ -136,6 +141,7 @@
 				313485B11BF417DF00D04B5B /* treadmill_prototype.cpp in Sources */,
 				313485A01BF410C500D04B5B /* main.cpp in Sources */,
 				313485AE1BF4178C00D04B5B /* equipment_prototype.cpp in Sources */,
+				313485B71BF4373A00D04B5B /* equipment_proto_factory.cpp in Sources */,
 				313485B41BF4297E00D04B5B /* bike_prototype.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

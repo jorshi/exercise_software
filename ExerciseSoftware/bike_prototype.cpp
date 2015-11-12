@@ -8,9 +8,14 @@
 
 #include "bike_prototype.hpp"
 
-BikePrototype::BikePrototype(const BikePrototype&)
+BikePrototype::BikePrototype()
 {
-    
+    this->setType("Bike");
+}
+
+BikePrototype::BikePrototype(const BikePrototype& other)
+{
+    this->setType(other.type);
 }
 
 EquipmentPrototype* BikePrototype::clone() const

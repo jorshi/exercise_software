@@ -10,6 +10,7 @@
 #define treadmill_prototype_hpp
 
 #include <stdio.h>
+#include <string>
 #include "equipment_prototype.hpp"
 
 

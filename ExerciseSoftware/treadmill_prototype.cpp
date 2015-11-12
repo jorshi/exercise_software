@@ -9,8 +9,15 @@
 #include "treadmill_prototype.hpp"
 
 
-TreadmillPrototype::TreadmillPrototype() {}
-TreadmillPrototype::TreadmillPrototype(const TreadmillPrototype&) {}
+TreadmillPrototype::TreadmillPrototype()
+{
+    this->setType("Treadmill");
+}
+
+TreadmillPrototype::TreadmillPrototype(const TreadmillPrototype& other)
+{
+    this->setType(other.type);
+}
 
 EquipmentPrototype* TreadmillPrototype::clone() const
 {

@@ -7,11 +7,15 @@
 //
 
 #include <iostream>
-#include "treadmill_prototype.hpp"
+#include "equipment_proto_factory.hpp"
+#include "equipment_prototype.hpp"
+
 
 int main(int argc, const char * argv[]) {
     
-    TreadmillPrototype treadmill;
+    EquipmentProtoFactory equipmentFactory;
+    EquipmentPrototype* e1 = equipmentFactory.getBike();
+    std::cout << e1->getType();
     
     return 0;
 }

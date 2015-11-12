@@ -7,8 +7,14 @@
 //
 
 #include "equipment_prototype.hpp"
+#include <string>
 
-int EquipmentPrototype::getId()
+void EquipmentPrototype::setType(std::string t)
 {
-    return id;
+    this->type = t;
+}
+
+std::string EquipmentPrototype::getType()
+{
+    return this->type;
 }
