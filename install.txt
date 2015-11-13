@@ -1,0 +1,17 @@
+This file includes information about building and
+installing the Exercise Equipment Software.
+==================================================
+
+1. Basic Installation, Using XCode
+
+This project was developed using XCode 7.0.1.
+
+- Building requires Google Protocol Buffers, see the online
+instructions for installation: https://github.com/google/protobuf
+
+- After install Protocol buffers, make sure the library included in
+the XCode linked binary is correct and the "Header Search Paths" &
+"Library Search Paths" are correct for the location that protobuf was
+installed.
+
+- Run build in XCode
