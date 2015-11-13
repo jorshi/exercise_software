@@ -1,4 +1,0 @@
-message ExerciseEquipment {
-    required int32 id = 1;
-    required string type = 2;
-}

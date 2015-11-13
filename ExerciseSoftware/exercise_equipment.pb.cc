@@ -37,16 +37,16 @@ void protobuf_AssignDesc_exercise_5fequipment_2eproto() {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ExerciseEquipment, type_),
   };
   ExerciseEquipment_reflection_ =
-    new ::google::protobuf::internal::GeneratedMessageReflection(
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       ExerciseEquipment_descriptor_,
       ExerciseEquipment::default_instance_,
       ExerciseEquipment_offsets_,
       GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ExerciseEquipment, _has_bits_[0]),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ExerciseEquipment, _unknown_fields_),
       -1,
-      ::google::protobuf::DescriptorPool::generated_pool(),
-      ::google::protobuf::MessageFactory::generated_factory(),
-      sizeof(ExerciseEquipment));
+      -1,
+      sizeof(ExerciseEquipment),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ExerciseEquipment, _internal_metadata_),
+      -1);
 }
 
 namespace {
@@ -60,7 +60,7 @@ inline void protobuf_AssignDescriptorsOnce() {
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-    ExerciseEquipment_descriptor_, &ExerciseEquipment::default_instance());
+      ExerciseEquipment_descriptor_, &ExerciseEquipment::default_instance());
 }
 
 }  // namespace
@@ -93,15 +93,25 @@ struct StaticDescriptorInitializer_exercise_5fequipment_2eproto {
   }
 } static_descriptor_initializer_exercise_5fequipment_2eproto_;
 
+namespace {
+
+static void MergeFromFail(int line) GOOGLE_ATTRIBUTE_COLD;
+static void MergeFromFail(int line) {
+  GOOGLE_CHECK(false) << __FILE__ << ":" << line;
+}
+
+}  // namespace
+
+
 // ===================================================================
 
-#ifndef _MSC_VER
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int ExerciseEquipment::kIdFieldNumber;
 const int ExerciseEquipment::kTypeFieldNumber;
-#endif  // !_MSC_VER
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 ExerciseEquipment::ExerciseEquipment()
-  : ::google::protobuf::Message() {
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:ExerciseEquipment)
 }
@@ -110,7 +120,8 @@ void ExerciseEquipment::InitAsDefaultInstance() {
 }
 
 ExerciseEquipment::ExerciseEquipment(const ExerciseEquipment& from)
-  : ::google::protobuf::Message() {
+  : ::google::protobuf::Message(),
+    _internal_metadata_(NULL) {
   SharedCtor();
   MergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:ExerciseEquipment)
@@ -120,7 +131,7 @@ void ExerciseEquipment::SharedCtor() {
   ::google::protobuf::internal::GetEmptyString();
   _cached_size_ = 0;
   id_ = 0;
-  type_ = const_cast< ::std::string*>(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  type_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
 
@@ -130,9 +141,7 @@ ExerciseEquipment::~ExerciseEquipment() {
 }
 
 void ExerciseEquipment::SharedDtor() {
-  if (type_ != &::google::protobuf::internal::GetEmptyStringAlreadyInited()) {
-    delete type_;
-  }
+  type_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   if (this != default_instance_) {
   }
 }
@@ -154,21 +163,25 @@ const ExerciseEquipment& ExerciseEquipment::default_instance() {
 
 ExerciseEquipment* ExerciseEquipment::default_instance_ = NULL;
 
-ExerciseEquipment* ExerciseEquipment::New() const {
-  return new ExerciseEquipment;
+ExerciseEquipment* ExerciseEquipment::New(::google::protobuf::Arena* arena) const {
+  ExerciseEquipment* n = new ExerciseEquipment;
+  if (arena != NULL) {
+    arena->Own(n);
+  }
+  return n;
 }
 
 void ExerciseEquipment::Clear() {
-  if (_has_bits_[0 / 32] & 3) {
+  if (_has_bits_[0 / 32] & 3u) {
     id_ = 0;
     if (has_type()) {
-      if (type_ != &::google::protobuf::internal::GetEmptyStringAlreadyInited()) {
-        type_->clear();
-      }
+      type_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
     }
   }
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
-  mutable_unknown_fields()->Clear();
+  if (_internal_metadata_.have_unknown_fields()) {
+    mutable_unknown_fields()->Clear();
+  }
 }
 
 bool ExerciseEquipment::MergePartialFromCodedStream(
@@ -204,7 +217,7 @@ bool ExerciseEquipment::MergePartialFromCodedStream(
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
             this->type().data(), this->type().length(),
             ::google::protobuf::internal::WireFormat::PARSE,
-            "type");
+            "ExerciseEquipment.type");
         } else {
           goto handle_unusual;
         }
@@ -247,12 +260,12 @@ void ExerciseEquipment::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
       this->type().data(), this->type().length(),
       ::google::protobuf::internal::WireFormat::SERIALIZE,
-      "type");
+      "ExerciseEquipment.type");
     ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
       2, this->type(), output);
   }
 
-  if (!unknown_fields().empty()) {
+  if (_internal_metadata_.have_unknown_fields()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         unknown_fields(), output);
   }
@@ -272,13 +285,13 @@ void ExerciseEquipment::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
       this->type().data(), this->type().length(),
       ::google::protobuf::internal::WireFormat::SERIALIZE,
-      "type");
+      "ExerciseEquipment.type");
     target =
       ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
         2, this->type(), target);
   }
 
-  if (!unknown_fields().empty()) {
+  if (_internal_metadata_.have_unknown_fields()) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         unknown_fields(), target);
   }
@@ -286,26 +299,43 @@ void ExerciseEquipment::SerializeWithCachedSizes(
   return target;
 }
 
+int ExerciseEquipment::RequiredFieldsByteSizeFallback() const {
+  int total_size = 0;
+
+  if (has_id()) {
+    // required int32 id = 1;
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int32Size(
+        this->id());
+  }
+
+  if (has_type()) {
+    // required string type = 2;
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->type());
+  }
+
+  return total_size;
+}
 int ExerciseEquipment::ByteSize() const {
   int total_size = 0;
 
-  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+  if (((_has_bits_[0] & 0x00000003) ^ 0x00000003) == 0) {  // All required fields are present.
     // required int32 id = 1;
-    if (has_id()) {
-      total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::Int32Size(
-          this->id());
-    }
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int32Size(
+        this->id());
 
     // required string type = 2;
-    if (has_type()) {
-      total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::StringSize(
-          this->type());
-    }
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->type());
 
+  } else {
+    total_size += RequiredFieldsByteSizeFallback();
   }
-  if (!unknown_fields().empty()) {
+  if (_internal_metadata_.have_unknown_fields()) {
     total_size +=
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         unknown_fields());
@@ -317,10 +347,10 @@ int ExerciseEquipment::ByteSize() const {
 }
 
 void ExerciseEquipment::MergeFrom(const ::google::protobuf::Message& from) {
-  GOOGLE_CHECK_NE(&from, this);
-  const ExerciseEquipment* source =
-    ::google::protobuf::internal::dynamic_cast_if_available<const ExerciseEquipment*>(
-      &from);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const ExerciseEquipment* source = 
+      ::google::protobuf::internal::DynamicCastToGenerated<const ExerciseEquipment>(
+          &from);
   if (source == NULL) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -329,16 +359,19 @@ void ExerciseEquipment::MergeFrom(const ::google::protobuf::Message& from) {
 }
 
 void ExerciseEquipment::MergeFrom(const ExerciseEquipment& from) {
-  GOOGLE_CHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   if (from._has_bits_[0 / 32] & (0xffu << (0 % 32))) {
     if (from.has_id()) {
       set_id(from.id());
     }
     if (from.has_type()) {
-      set_type(from.type());
+      set_has_type();
+      type_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.type_);
     }
   }
-  mutable_unknown_fields()->MergeFrom(from.unknown_fields());
+  if (from._internal_metadata_.have_unknown_fields()) {
+    mutable_unknown_fields()->MergeFrom(from.unknown_fields());
+  }
 }
 
 void ExerciseEquipment::CopyFrom(const ::google::protobuf::Message& from) {
@@ -360,13 +393,15 @@ bool ExerciseEquipment::IsInitialized() const {
 }
 
 void ExerciseEquipment::Swap(ExerciseEquipment* other) {
-  if (other != this) {
-    std::swap(id_, other->id_);
-    std::swap(type_, other->type_);
-    std::swap(_has_bits_[0], other->_has_bits_[0]);
-    _unknown_fields_.Swap(&other->_unknown_fields_);
-    std::swap(_cached_size_, other->_cached_size_);
-  }
+  if (other == this) return;
+  InternalSwap(other);
+}
+void ExerciseEquipment::InternalSwap(ExerciseEquipment* other) {
+  std::swap(id_, other->id_);
+  type_.Swap(&other->type_);
+  std::swap(_has_bits_[0], other->_has_bits_[0]);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata ExerciseEquipment::GetMetadata() const {
@@ -377,6 +412,87 @@ void ExerciseEquipment::Swap(ExerciseEquipment* other) {
   return metadata;
 }
 
+#if PROTOBUF_INLINE_NOT_IN_HEADERS
+// ExerciseEquipment
+
+// required int32 id = 1;
+bool ExerciseEquipment::has_id() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+void ExerciseEquipment::set_has_id() {
+  _has_bits_[0] |= 0x00000001u;
+}
+void ExerciseEquipment::clear_has_id() {
+  _has_bits_[0] &= ~0x00000001u;
+}
+void ExerciseEquipment::clear_id() {
+  id_ = 0;
+  clear_has_id();
+}
+ ::google::protobuf::int32 ExerciseEquipment::id() const {
+  // @@protoc_insertion_point(field_get:ExerciseEquipment.id)
+  return id_;
+}
+ void ExerciseEquipment::set_id(::google::protobuf::int32 value) {
+  set_has_id();
+  id_ = value;
+  // @@protoc_insertion_point(field_set:ExerciseEquipment.id)
+}
+
+// required string type = 2;
+bool ExerciseEquipment::has_type() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+void ExerciseEquipment::set_has_type() {
+  _has_bits_[0] |= 0x00000002u;
+}
+void ExerciseEquipment::clear_has_type() {
+  _has_bits_[0] &= ~0x00000002u;
+}
+void ExerciseEquipment::clear_type() {
+  type_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  clear_has_type();
+}
+ const ::std::string& ExerciseEquipment::type() const {
+  // @@protoc_insertion_point(field_get:ExerciseEquipment.type)
+  return type_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+ void ExerciseEquipment::set_type(const ::std::string& value) {
+  set_has_type();
+  type_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
+  // @@protoc_insertion_point(field_set:ExerciseEquipment.type)
+}
+ void ExerciseEquipment::set_type(const char* value) {
+  set_has_type();
+  type_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:ExerciseEquipment.type)
+}
+ void ExerciseEquipment::set_type(const char* value, size_t size) {
+  set_has_type();
+  type_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+      ::std::string(reinterpret_cast<const char*>(value), size));
+  // @@protoc_insertion_point(field_set_pointer:ExerciseEquipment.type)
+}
+ ::std::string* ExerciseEquipment::mutable_type() {
+  set_has_type();
+  // @@protoc_insertion_point(field_mutable:ExerciseEquipment.type)
+  return type_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+ ::std::string* ExerciseEquipment::release_type() {
+  clear_has_type();
+  return type_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+ void ExerciseEquipment::set_allocated_type(::std::string* type) {
+  if (type != NULL) {
+    set_has_type();
+  } else {
+    clear_has_type();
+  }
+  type_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), type);
+  // @@protoc_insertion_point(field_set_allocated:ExerciseEquipment.type)
+}
+
+#endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // @@protoc_insertion_point(namespace_scope)
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3123C2781BF574BE00A5713A /* libprotobuf.10.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3123C2761BF5748200A5713A /* libprotobuf.10.dylib */; };
 		313485A01BF410C500D04B5B /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3134859F1BF410C500D04B5B /* main.cpp */; };
 		313485AE1BF4178C00D04B5B /* equipment_prototype.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 313485AC1BF4178C00D04B5B /* equipment_prototype.cpp */; settings = {ASSET_TAGS = (); }; };
 		313485B11BF417DF00D04B5B /* treadmill_prototype.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 313485AF1BF417DF00D04B5B /* treadmill_prototype.cpp */; settings = {ASSET_TAGS = (); }; };
@@ -27,6 +28,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3123C2761BF5748200A5713A /* libprotobuf.10.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libprotobuf.10.dylib; path = ../../../../usr/local/lib/libprotobuf.10.dylib; sourceTree = "<group>"; };
 		3134859C1BF410C500D04B5B /* ExerciseSoftware */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ExerciseSoftware; sourceTree = BUILT_PRODUCTS_DIR; };
 		3134859F1BF410C500D04B5B /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		313485AC1BF4178C00D04B5B /* equipment_prototype.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = equipment_prototype.cpp; sourceTree = "<group>"; };
@@ -44,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3123C2781BF574BE00A5713A /* libprotobuf.10.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +56,7 @@
 		313485931BF410C500D04B5B = {
 			isa = PBXGroup;
 			children = (
+				3123C2761BF5748200A5713A /* libprotobuf.10.dylib */,
 				3134859E1BF410C500D04B5B /* ExerciseSoftware */,
 				3134859D1BF410C500D04B5B /* Products */,
 			);
@@ -229,6 +233,9 @@
 		313485A41BF410C500D04B5B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				OTHER_LDFLAGS = "-lprotobuf";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -236,6 +243,9 @@
 		313485A51BF410C500D04B5B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				OTHER_LDFLAGS = "-lprotobuf";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -259,6 +269,7 @@
 				313485A51BF410C500D04B5B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
