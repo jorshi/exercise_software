@@ -10,11 +10,14 @@
 #include <string>
 #include <map>
 #include "equipment_proto_factory.hpp"
-#include "equipment_prototype.hpp"
+//#include "equipment_prototype.hpp"
 #include "exercise_equipment.pb.h"
 
 
 int main(int argc, const char * argv[]) {
+    // Verify that the version of the library that we linked against is
+    // compatible with the version of the headers we compiled against.
+    GOOGLE_PROTOBUF_VERIFY_VERSION;
 
     int num;
     int i = 0;
@@ -25,6 +28,9 @@ int main(int argc, const char * argv[]) {
     std::cout << "How many new pieces of equipment would you like to create?" << std::endl;
     std::cin >> num;
     
+    //exercise_protobuf::Gym gym;
+    
+    // Arrary of EquipmentPrototype objects for holding the new equipment
     EquipmentPrototype* equipment[num];
     
     while (i < num)

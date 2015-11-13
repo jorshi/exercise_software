@@ -29,23 +29,26 @@
 #include <google/protobuf/unknown_field_set.h>
 // @@protoc_insertion_point(includes)
 
+namespace exercise_protobuf {
+
 // Internal implementation detail -- do not call these.
 void protobuf_AddDesc_exercise_5fequipment_2eproto();
 void protobuf_AssignDesc_exercise_5fequipment_2eproto();
 void protobuf_ShutdownFile_exercise_5fequipment_2eproto();
 
-class ExerciseEquipment;
+class Equipment;
+class Gym;
 
 // ===================================================================
 
-class ExerciseEquipment : public ::google::protobuf::Message {
+class Equipment : public ::google::protobuf::Message {
  public:
-  ExerciseEquipment();
-  virtual ~ExerciseEquipment();
+  Equipment();
+  virtual ~Equipment();
 
-  ExerciseEquipment(const ExerciseEquipment& from);
+  Equipment(const Equipment& from);
 
-  inline ExerciseEquipment& operator=(const ExerciseEquipment& from) {
+  inline Equipment& operator=(const Equipment& from) {
     CopyFrom(from);
     return *this;
   }
@@ -59,19 +62,19 @@ class ExerciseEquipment : public ::google::protobuf::Message {
   }
 
   static const ::google::protobuf::Descriptor* descriptor();
-  static const ExerciseEquipment& default_instance();
+  static const Equipment& default_instance();
 
-  void Swap(ExerciseEquipment* other);
+  void Swap(Equipment* other);
 
   // implements Message ----------------------------------------------
 
-  inline ExerciseEquipment* New() const { return New(NULL); }
+  inline Equipment* New() const { return New(NULL); }
 
-  ExerciseEquipment* New(::google::protobuf::Arena* arena) const;
+  Equipment* New(::google::protobuf::Arena* arena) const;
   void CopyFrom(const ::google::protobuf::Message& from);
   void MergeFrom(const ::google::protobuf::Message& from);
-  void CopyFrom(const ExerciseEquipment& from);
-  void MergeFrom(const ExerciseEquipment& from);
+  void CopyFrom(const Equipment& from);
+  void MergeFrom(const Equipment& from);
   void Clear();
   bool IsInitialized() const;
 
@@ -86,7 +89,7 @@ class ExerciseEquipment : public ::google::protobuf::Message {
   void SharedCtor();
   void SharedDtor();
   void SetCachedSize(int size) const;
-  void InternalSwap(ExerciseEquipment* other);
+  void InternalSwap(Equipment* other);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
     return _internal_metadata_.arena();
@@ -121,7 +124,7 @@ class ExerciseEquipment : public ::google::protobuf::Message {
   ::std::string* release_type();
   void set_allocated_type(::std::string* type);
 
-  // @@protoc_insertion_point(class_scope:ExerciseEquipment)
+  // @@protoc_insertion_point(class_scope:exercise_protobuf.Equipment)
  private:
   inline void set_has_id();
   inline void clear_has_id();
@@ -141,7 +144,99 @@ class ExerciseEquipment : public ::google::protobuf::Message {
   friend void protobuf_ShutdownFile_exercise_5fequipment_2eproto();
 
   void InitAsDefaultInstance();
-  static ExerciseEquipment* default_instance_;
+  static Equipment* default_instance_;
+};
+// -------------------------------------------------------------------
+
+class Gym : public ::google::protobuf::Message {
+ public:
+  Gym();
+  virtual ~Gym();
+
+  Gym(const Gym& from);
+
+  inline Gym& operator=(const Gym& from) {
+    CopyFrom(from);
+    return *this;
+  }
+
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+    return _internal_metadata_.unknown_fields();
+  }
+
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+    return _internal_metadata_.mutable_unknown_fields();
+  }
+
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const Gym& default_instance();
+
+  void Swap(Gym* other);
+
+  // implements Message ----------------------------------------------
+
+  inline Gym* New() const { return New(NULL); }
+
+  Gym* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
+  void CopyFrom(const Gym& from);
+  void MergeFrom(const Gym& from);
+  void Clear();
+  bool IsInitialized() const;
+
+  int ByteSize() const;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input);
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const;
+  int GetCachedSize() const { return _cached_size_; }
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const;
+  void InternalSwap(Gym* other);
+  private:
+  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+    return _internal_metadata_.arena();
+  }
+  inline void* MaybeArenaPtr() const {
+    return _internal_metadata_.raw_arena_ptr();
+  }
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // repeated .exercise_protobuf.Equipment equipment = 1;
+  int equipment_size() const;
+  void clear_equipment();
+  static const int kEquipmentFieldNumber = 1;
+  const ::exercise_protobuf::Equipment& equipment(int index) const;
+  ::exercise_protobuf::Equipment* mutable_equipment(int index);
+  ::exercise_protobuf::Equipment* add_equipment();
+  ::google::protobuf::RepeatedPtrField< ::exercise_protobuf::Equipment >*
+      mutable_equipment();
+  const ::google::protobuf::RepeatedPtrField< ::exercise_protobuf::Equipment >&
+      equipment() const;
+
+  // @@protoc_insertion_point(class_scope:exercise_protobuf.Gym)
+ private:
+
+  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::google::protobuf::uint32 _has_bits_[1];
+  mutable int _cached_size_;
+  ::google::protobuf::RepeatedPtrField< ::exercise_protobuf::Equipment > equipment_;
+  friend void  protobuf_AddDesc_exercise_5fequipment_2eproto();
+  friend void protobuf_AssignDesc_exercise_5fequipment_2eproto();
+  friend void protobuf_ShutdownFile_exercise_5fequipment_2eproto();
+
+  void InitAsDefaultInstance();
+  static Gym* default_instance_;
 };
 // ===================================================================
 
@@ -149,88 +244,126 @@ class ExerciseEquipment : public ::google::protobuf::Message {
 // ===================================================================
 
 #if !PROTOBUF_INLINE_NOT_IN_HEADERS
-// ExerciseEquipment
+// Equipment
 
 // required int32 id = 1;
-inline bool ExerciseEquipment::has_id() const {
+inline bool Equipment::has_id() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
-inline void ExerciseEquipment::set_has_id() {
+inline void Equipment::set_has_id() {
   _has_bits_[0] |= 0x00000001u;
 }
-inline void ExerciseEquipment::clear_has_id() {
+inline void Equipment::clear_has_id() {
   _has_bits_[0] &= ~0x00000001u;
 }
-inline void ExerciseEquipment::clear_id() {
+inline void Equipment::clear_id() {
   id_ = 0;
   clear_has_id();
 }
-inline ::google::protobuf::int32 ExerciseEquipment::id() const {
-  // @@protoc_insertion_point(field_get:ExerciseEquipment.id)
+inline ::google::protobuf::int32 Equipment::id() const {
+  // @@protoc_insertion_point(field_get:exercise_protobuf.Equipment.id)
   return id_;
 }
-inline void ExerciseEquipment::set_id(::google::protobuf::int32 value) {
+inline void Equipment::set_id(::google::protobuf::int32 value) {
   set_has_id();
   id_ = value;
-  // @@protoc_insertion_point(field_set:ExerciseEquipment.id)
+  // @@protoc_insertion_point(field_set:exercise_protobuf.Equipment.id)
 }
 
 // required string type = 2;
-inline bool ExerciseEquipment::has_type() const {
+inline bool Equipment::has_type() const {
   return (_has_bits_[0] & 0x00000002u) != 0;
 }
-inline void ExerciseEquipment::set_has_type() {
+inline void Equipment::set_has_type() {
   _has_bits_[0] |= 0x00000002u;
 }
-inline void ExerciseEquipment::clear_has_type() {
+inline void Equipment::clear_has_type() {
   _has_bits_[0] &= ~0x00000002u;
 }
-inline void ExerciseEquipment::clear_type() {
+inline void Equipment::clear_type() {
   type_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   clear_has_type();
 }
-inline const ::std::string& ExerciseEquipment::type() const {
-  // @@protoc_insertion_point(field_get:ExerciseEquipment.type)
+inline const ::std::string& Equipment::type() const {
+  // @@protoc_insertion_point(field_get:exercise_protobuf.Equipment.type)
   return type_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
-inline void ExerciseEquipment::set_type(const ::std::string& value) {
+inline void Equipment::set_type(const ::std::string& value) {
   set_has_type();
   type_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
-  // @@protoc_insertion_point(field_set:ExerciseEquipment.type)
+  // @@protoc_insertion_point(field_set:exercise_protobuf.Equipment.type)
 }
-inline void ExerciseEquipment::set_type(const char* value) {
+inline void Equipment::set_type(const char* value) {
   set_has_type();
   type_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
-  // @@protoc_insertion_point(field_set_char:ExerciseEquipment.type)
+  // @@protoc_insertion_point(field_set_char:exercise_protobuf.Equipment.type)
 }
-inline void ExerciseEquipment::set_type(const char* value, size_t size) {
+inline void Equipment::set_type(const char* value, size_t size) {
   set_has_type();
   type_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
-  // @@protoc_insertion_point(field_set_pointer:ExerciseEquipment.type)
+  // @@protoc_insertion_point(field_set_pointer:exercise_protobuf.Equipment.type)
 }
-inline ::std::string* ExerciseEquipment::mutable_type() {
+inline ::std::string* Equipment::mutable_type() {
   set_has_type();
-  // @@protoc_insertion_point(field_mutable:ExerciseEquipment.type)
+  // @@protoc_insertion_point(field_mutable:exercise_protobuf.Equipment.type)
   return type_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
-inline ::std::string* ExerciseEquipment::release_type() {
+inline ::std::string* Equipment::release_type() {
   clear_has_type();
   return type_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
-inline void ExerciseEquipment::set_allocated_type(::std::string* type) {
+inline void Equipment::set_allocated_type(::std::string* type) {
   if (type != NULL) {
     set_has_type();
   } else {
     clear_has_type();
   }
   type_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), type);
-  // @@protoc_insertion_point(field_set_allocated:ExerciseEquipment.type)
+  // @@protoc_insertion_point(field_set_allocated:exercise_protobuf.Equipment.type)
+}
+
+// -------------------------------------------------------------------
+
+// Gym
+
+// repeated .exercise_protobuf.Equipment equipment = 1;
+inline int Gym::equipment_size() const {
+  return equipment_.size();
+}
+inline void Gym::clear_equipment() {
+  equipment_.Clear();
+}
+inline const ::exercise_protobuf::Equipment& Gym::equipment(int index) const {
+  // @@protoc_insertion_point(field_get:exercise_protobuf.Gym.equipment)
+  return equipment_.Get(index);
+}
+inline ::exercise_protobuf::Equipment* Gym::mutable_equipment(int index) {
+  // @@protoc_insertion_point(field_mutable:exercise_protobuf.Gym.equipment)
+  return equipment_.Mutable(index);
+}
+inline ::exercise_protobuf::Equipment* Gym::add_equipment() {
+  // @@protoc_insertion_point(field_add:exercise_protobuf.Gym.equipment)
+  return equipment_.Add();
+}
+inline ::google::protobuf::RepeatedPtrField< ::exercise_protobuf::Equipment >*
+Gym::mutable_equipment() {
+  // @@protoc_insertion_point(field_mutable_list:exercise_protobuf.Gym.equipment)
+  return &equipment_;
+}
+inline const ::google::protobuf::RepeatedPtrField< ::exercise_protobuf::Equipment >&
+Gym::equipment() const {
+  // @@protoc_insertion_point(field_list:exercise_protobuf.Gym.equipment)
+  return equipment_;
 }
 
 #endif  // !PROTOBUF_INLINE_NOT_IN_HEADERS
+// -------------------------------------------------------------------
+
 
 // @@protoc_insertion_point(namespace_scope)
+
+}  // namespace exercise_protobuf
 
 // @@protoc_insertion_point(global_scope)
 
