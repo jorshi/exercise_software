@@ -1,0 +1,10 @@
+package exercise_protobuf;
+
+message Equipment {
+    required int32 id = 1;
+    required string type = 2;
+}
+
+message Gym {
+    repeated Equipment equipment = 1;
+}

@@ -8,6 +8,7 @@
 
 #include "test_treadmill_prototype.hpp"
 
+// Treadmill Prototype Constructor Test
 TEST(TreadmillPrototypeTest, Constructor) {
     TreadmillPrototype treadmill;
     ASSERT_TRUE(treadmill.getType() == "Treadmill");

@@ -20,7 +20,6 @@ class TreadmillPrototype: public EquipmentPrototype
 public:
     TreadmillPrototype();
     TreadmillPrototype(const TreadmillPrototype&);
-    ~TreadmillPrototype();
 
     EquipmentPrototype* clone() const;
     

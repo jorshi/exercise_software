@@ -8,9 +8,8 @@
 
 #include <iostream>
 #include <gtest/gtest.h>
-#include "test_treadmill_prototype.hpp"
 
-
+// Set up Google Test and run all tests in the Tests directory
 GTEST_API_ int main(int argc, char **argv) {
     printf("Running Tests for Exercise Software\n");
     testing::InitGoogleTest(&argc, argv);

@@ -20,6 +20,8 @@
 		313E8AD01BF5B2580043641F /* treadmill_prototype.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 313485AF1BF417DF00D04B5B /* treadmill_prototype.cpp */; };
 		313E8AD11BF5B2580043641F /* bike_prototype.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 313485B21BF4297E00D04B5B /* bike_prototype.cpp */; };
 		313E8AD21BF5B2580043641F /* equipment_proto_factory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 313485B51BF4373A00D04B5B /* equipment_proto_factory.cpp */; };
+		313E8AD51BF5B3750043641F /* test_bike_prototype.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 313E8AD31BF5B3750043641F /* test_bike_prototype.cpp */; settings = {ASSET_TAGS = (); }; };
+		313E8AD81BF5B45C0043641F /* test_equipment_proto_factory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 313E8AD61BF5B45C0043641F /* test_equipment_proto_factory.cpp */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -60,6 +62,10 @@
 		313E8AC01BF5A8B10043641F /* gtest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = gtest.framework; path = "../packages/gtest-1.7.0/xcode/build/Release/gtest.framework"; sourceTree = "<group>"; };
 		313E8AC51BF5AEC30043641F /* test_treadmill_prototype.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = test_treadmill_prototype.cpp; sourceTree = "<group>"; };
 		313E8AC61BF5AEC30043641F /* test_treadmill_prototype.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = test_treadmill_prototype.hpp; sourceTree = "<group>"; };
+		313E8AD31BF5B3750043641F /* test_bike_prototype.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = test_bike_prototype.cpp; sourceTree = "<group>"; };
+		313E8AD41BF5B3750043641F /* test_bike_prototype.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = test_bike_prototype.hpp; sourceTree = "<group>"; };
+		313E8AD61BF5B45C0043641F /* test_equipment_proto_factory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = test_equipment_proto_factory.cpp; sourceTree = "<group>"; };
+		313E8AD71BF5B45C0043641F /* test_equipment_proto_factory.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = test_equipment_proto_factory.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +130,10 @@
 				313E8AB11BF5A1C80043641F /* main.cpp */,
 				313E8AC51BF5AEC30043641F /* test_treadmill_prototype.cpp */,
 				313E8AC61BF5AEC30043641F /* test_treadmill_prototype.hpp */,
+				313E8AD31BF5B3750043641F /* test_bike_prototype.cpp */,
+				313E8AD41BF5B3750043641F /* test_bike_prototype.hpp */,
+				313E8AD61BF5B45C0043641F /* test_equipment_proto_factory.cpp */,
+				313E8AD71BF5B45C0043641F /* test_equipment_proto_factory.hpp */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -221,8 +231,10 @@
 				313E8AD01BF5B2580043641F /* treadmill_prototype.cpp in Sources */,
 				313E8AD11BF5B2580043641F /* bike_prototype.cpp in Sources */,
 				313E8AD21BF5B2580043641F /* equipment_proto_factory.cpp in Sources */,
+				313E8AD81BF5B45C0043641F /* test_equipment_proto_factory.cpp in Sources */,
 				313E8ACE1BF5B2390043641F /* test_treadmill_prototype.cpp in Sources */,
 				313E8AB21BF5A1C80043641F /* main.cpp in Sources */,
+				313E8AD51BF5B3750043641F /* test_bike_prototype.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
