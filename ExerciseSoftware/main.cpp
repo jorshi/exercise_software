@@ -10,7 +10,7 @@
 #include <string>
 #include <map>
 #include "equipment_proto_factory.hpp"
-//#include "equipment_prototype.hpp"
+#include "equipment_prototype.hpp"
 #include "exercise_equipment.pb.h"
 
 
@@ -24,14 +24,12 @@ int main(int argc, const char * argv[]) {
     std::string typeStr;
     EquipmentType type;
     EquipmentProtoFactory equipmentFactory;
-    
+    std::vector<EquipmentPrototype*> equipment;
+ 
     std::cout << "How many new pieces of equipment would you like to create?" << std::endl;
     std::cin >> num;
     
-    //exercise_protobuf::Gym gym;
-    
-    // Arrary of EquipmentPrototype objects for holding the new equipment
-    EquipmentPrototype* equipment[num];
+    exercise_protobuf::Gym gym;
     
     while (i < num)
     {
@@ -52,7 +50,7 @@ int main(int argc, const char * argv[]) {
         }
 
         // Create a new equipment object of that type and store
-        equipment[i] = equipmentFactory.getEquipment(type);
+        equipment.push_back(equipmentFactory.getEquipment(type));
         i++;
     }
     
