@@ -1,6 +1,6 @@
 //
 //  main.cpp
-//  Tests
+//  Unit Tests for the Exercise Software Application
 //
 //  Created by Jordie Shier  on 2015-11-12.
 //  Copyright © 2015 Jordie Shier . All rights reserved.
