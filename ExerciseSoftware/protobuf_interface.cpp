@@ -61,6 +61,8 @@ void ProtobufInterface::writeBuffer()
     _gym.SerializeToOstream(&output);
 }
 
+
+// Return the int ID of the last stored equipment
 int ProtobufInterface::getLastIdValue()
 {
     if (_gym.equipment_size() > 0) {

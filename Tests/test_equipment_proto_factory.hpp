@@ -14,4 +14,6 @@
 #include "equipment_proto_factory.hpp"
 #include "equipment_prototype.hpp"
 
+//! Unit tests for the EquipmentProtoFactory Class
+
 #endif /* test_equipment_proto_factory_hpp */

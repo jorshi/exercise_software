@@ -13,4 +13,6 @@
 #include <gtest/gtest.h>
 #include "bike_prototype.hpp"
 
+//! Unit tests for the BikePrototype Class
+
 #endif /* test_bike_prototype_hpp */

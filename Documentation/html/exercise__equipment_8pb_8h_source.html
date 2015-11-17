@@ -180,12 +180,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <span class="comment">// accessors -------------------------------------------------------</span></div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <span class="comment">// required int64 id = 1;</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <span class="comment">// required int32 id = 1;</span></div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <span class="keyword">inline</span> <span class="keywordtype">bool</span> has_id() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <span class="keyword">inline</span> <span class="keywordtype">void</span> clear_id();</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> kIdFieldNumber = 1;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  inline ::google::protobuf::int64 id() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <span class="keyword">inline</span> <span class="keywordtype">void</span> set_id(::google::protobuf::int64 value);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  inline ::google::protobuf::int32 id() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <span class="keyword">inline</span> <span class="keywordtype">void</span> set_id(::google::protobuf::int32 value);</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  <span class="comment">// required string type = 2;</span></div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  <span class="keyword">inline</span> <span class="keywordtype">bool</span> has_type() <span class="keyword">const</span>;</div>
@@ -210,8 +210,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  ::google::protobuf::uint32 _has_bits_[1];</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  <span class="keyword">mutable</span> <span class="keywordtype">int</span> _cached_size_;</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;  ::google::protobuf::int64 id_;</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  ::std::string* type_;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;  ::std::string* type_;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  ::google::protobuf::int32 id_;</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  <span class="keyword">friend</span> <span class="keywordtype">void</span>  protobuf_AddDesc_exercise_5fequipment_2eproto();</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  <span class="keyword">friend</span> <span class="keywordtype">void</span> protobuf_AssignDesc_exercise_5fequipment_2eproto();</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  <span class="keyword">friend</span> <span class="keywordtype">void</span> protobuf_ShutdownFile_exercise_5fequipment_2eproto();</div>
@@ -308,7 +308,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;</div>
 <div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;<span class="comment">// Equipment</span></div>
 <div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;<span class="comment">// required int64 id = 1;</span></div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;<span class="comment">// required int32 id = 1;</span></div>
 <div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">bool</span> Equipment::has_id()<span class="keyword"> const </span>{</div>
 <div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;  <span class="keywordflow">return</span> (_has_bits_[0] &amp; 0x00000001u) != 0;</div>
 <div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;}</div>
@@ -319,14 +319,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;  _has_bits_[0] &amp;= ~0x00000001u;</div>
 <div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;}</div>
 <div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> Equipment::clear_id() {</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;  id_ = GOOGLE_LONGLONG(0);</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;  id_ = 0;</div>
 <div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;  clear_has_id();</div>
 <div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;}</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;inline ::google::protobuf::int64 Equipment::id()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;inline ::google::protobuf::int32 Equipment::id()<span class="keyword"> const </span>{</div>
 <div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;  <span class="comment">// @@protoc_insertion_point(field_get:exercise_protobuf.Equipment.id)</span></div>
 <div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;  <span class="keywordflow">return</span> id_;</div>
 <div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;}</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> Equipment::set_id(::google::protobuf::int64 value) {</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> Equipment::set_id(::google::protobuf::int32 value) {</div>
 <div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;  set_has_id();</div>
 <div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;  id_ = value;</div>
 <div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;  <span class="comment">// @@protoc_insertion_point(field_set:exercise_protobuf.Equipment.id)</span></div>

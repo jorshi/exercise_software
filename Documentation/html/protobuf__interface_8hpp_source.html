@@ -99,37 +99,44 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#define protobuf_interface_hpp</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;exercise_equipment.pb.h&quot;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;equipment_prototype.hpp&quot;</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
-<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_protobuf_interface.html">   21</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_protobuf_interface.html">ProtobufInterface</a></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="class_protobuf_interface.html#a4d65823e8eb886b99dd5eb7e7de0b654">ProtobufInterface</a>();</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;fstream&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;exercise_equipment.pb.h&quot;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;equipment_prototype.hpp&quot;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="class_protobuf_interface.html">   24</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_protobuf_interface.html">ProtobufInterface</a></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;{</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="class_protobuf_interface.html#a678642544e3b285b8967bb4c9ff9dc03">~ProtobufInterface</a>();</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="class_protobuf_interface.html#a8c88fde7ed05fea4c1ab538f8c8aca45">ProtobufInterface</a>(std::string gymFile);</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_protobuf_interface.html#a4fcc7746952ac2d5631e99de56e40e79">addEquipment</a>(<a class="code" href="class_equipment_prototype.html">EquipmentPrototype</a>* e);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="class_protobuf_interface.html#a678642544e3b285b8967bb4c9ff9dc03">~ProtobufInterface</a>();</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_protobuf_interface.html#ab98af826400aa8918a71849e0447834e">writeBuffer</a>();</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_protobuf_interface.html#a4fcc7746952ac2d5631e99de56e40e79">addEquipment</a>(<a class="code" href="class_equipment_prototype.html">EquipmentPrototype</a>* e);</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="classexercise__protobuf_1_1_gym.html">exercise_protobuf::Gym</a> gym;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;};</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* protobuf_interface_hpp */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="class_protobuf_interface_html_ab98af826400aa8918a71849e0447834e"><div class="ttname"><a href="class_protobuf_interface.html#ab98af826400aa8918a71849e0447834e">ProtobufInterface::writeBuffer</a></div><div class="ttdeci">void writeBuffer()</div><div class="ttdoc">Write the current gym message. </div><div class="ttdef"><b>Definition:</b> protobuf_interface.cpp:47</div></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_protobuf_interface.html#ab98af826400aa8918a71849e0447834e">writeBuffer</a>();</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_protobuf_interface.html#ae6a038c87ee785121c4205d461f2d26b">getLastIdValue</a>();</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="classexercise__protobuf_1_1_gym.html">exercise_protobuf::Gym</a> _gym;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    std::string _bufferLocation;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;};</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* protobuf_interface_hpp */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="class_protobuf_interface_html_ab98af826400aa8918a71849e0447834e"><div class="ttname"><a href="class_protobuf_interface.html#ab98af826400aa8918a71849e0447834e">ProtobufInterface::writeBuffer</a></div><div class="ttdeci">void writeBuffer()</div><div class="ttdoc">Write the current gym message. </div><div class="ttdef"><b>Definition:</b> protobuf_interface.cpp:58</div></div>
 <div class="ttc" id="classexercise__protobuf_1_1_gym_html"><div class="ttname"><a href="classexercise__protobuf_1_1_gym.html">exercise_protobuf::Gym</a></div><div class="ttdef"><b>Definition:</b> exercise_equipment.pb.h:135</div></div>
-<div class="ttc" id="class_protobuf_interface_html_a4d65823e8eb886b99dd5eb7e7de0b654"><div class="ttname"><a href="class_protobuf_interface.html#a4d65823e8eb886b99dd5eb7e7de0b654">ProtobufInterface::ProtobufInterface</a></div><div class="ttdeci">ProtobufInterface()</div><div class="ttdoc">Constuctor. </div><div class="ttdef"><b>Definition:</b> protobuf_interface.cpp:18</div></div>
-<div class="ttc" id="class_protobuf_interface_html_a678642544e3b285b8967bb4c9ff9dc03"><div class="ttname"><a href="class_protobuf_interface.html#a678642544e3b285b8967bb4c9ff9dc03">ProtobufInterface::~ProtobufInterface</a></div><div class="ttdeci">~ProtobufInterface()</div><div class="ttdoc">Destructor. </div><div class="ttdef"><b>Definition:</b> protobuf_interface.cpp:29</div></div>
+<div class="ttc" id="class_protobuf_interface_html_a678642544e3b285b8967bb4c9ff9dc03"><div class="ttname"><a href="class_protobuf_interface.html#a678642544e3b285b8967bb4c9ff9dc03">ProtobufInterface::~ProtobufInterface</a></div><div class="ttdeci">~ProtobufInterface()</div><div class="ttdoc">Destructor. </div><div class="ttdef"><b>Definition:</b> protobuf_interface.cpp:40</div></div>
 <div class="ttc" id="class_equipment_prototype_html"><div class="ttname"><a href="class_equipment_prototype.html">EquipmentPrototype</a></div><div class="ttdoc">EquipmentPrototype Class. </div><div class="ttdef"><b>Definition:</b> equipment_prototype.hpp:19</div></div>
-<div class="ttc" id="class_protobuf_interface_html_a4fcc7746952ac2d5631e99de56e40e79"><div class="ttname"><a href="class_protobuf_interface.html#a4fcc7746952ac2d5631e99de56e40e79">ProtobufInterface::addEquipment</a></div><div class="ttdeci">void addEquipment(EquipmentPrototype *e)</div><div class="ttdoc">Add a new piece of equipment to the gym message. </div><div class="ttdef"><b>Definition:</b> protobuf_interface.cpp:36</div></div>
-<div class="ttc" id="class_protobuf_interface_html"><div class="ttname"><a href="class_protobuf_interface.html">ProtobufInterface</a></div><div class="ttdoc">ProtobufInterface Class. </div><div class="ttdef"><b>Definition:</b> protobuf_interface.hpp:21</div></div>
+<div class="ttc" id="class_protobuf_interface_html_a8c88fde7ed05fea4c1ab538f8c8aca45"><div class="ttname"><a href="class_protobuf_interface.html#a8c88fde7ed05fea4c1ab538f8c8aca45">ProtobufInterface::ProtobufInterface</a></div><div class="ttdeci">ProtobufInterface(std::string gymFile)</div><div class="ttdoc">Constuctor. </div><div class="ttdef"><b>Definition:</b> protobuf_interface.cpp:17</div></div>
+<div class="ttc" id="class_protobuf_interface_html_ae6a038c87ee785121c4205d461f2d26b"><div class="ttname"><a href="class_protobuf_interface.html#ae6a038c87ee785121c4205d461f2d26b">ProtobufInterface::getLastIdValue</a></div><div class="ttdeci">int getLastIdValue()</div><div class="ttdoc">Returns the last equipment ID value stored. </div><div class="ttdef"><b>Definition:</b> protobuf_interface.cpp:66</div></div>
+<div class="ttc" id="class_protobuf_interface_html_a4fcc7746952ac2d5631e99de56e40e79"><div class="ttname"><a href="class_protobuf_interface.html#a4fcc7746952ac2d5631e99de56e40e79">ProtobufInterface::addEquipment</a></div><div class="ttdeci">void addEquipment(EquipmentPrototype *e)</div><div class="ttdoc">Add a new piece of equipment to the gym message. </div><div class="ttdef"><b>Definition:</b> protobuf_interface.cpp:47</div></div>
+<div class="ttc" id="class_protobuf_interface_html"><div class="ttname"><a href="class_protobuf_interface.html">ProtobufInterface</a></div><div class="ttdoc">ProtobufInterface Class. </div><div class="ttdef"><b>Definition:</b> protobuf_interface.hpp:24</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

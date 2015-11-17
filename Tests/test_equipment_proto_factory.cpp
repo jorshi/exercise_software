@@ -8,7 +8,7 @@
 
 #include "test_equipment_proto_factory.hpp"
 
-
+// Test the getEquipment method in the EquipmentProtoFactory
 TEST(EquipmentProtoFactoryTest, GetEquipment)
 {
     
@@ -23,6 +23,8 @@ TEST(EquipmentProtoFactoryTest, GetEquipment)
     ASSERT_TRUE(newTreadmill->getType() == "Treadmill");
 }
 
+
+// Test the getEquipmentType method in the EquipmentProtoFactory
 TEST(EquipmentProtoFactoryTest, GetEquipmentType)
 {
     

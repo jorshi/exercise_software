@@ -126,21 +126,24 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    </div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    std::string <a class="code" href="class_equipment_proto_factory.html#a85965709ee05ef53303c9448b35aea60">getTypes</a>();</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keyword">static</span> std::map&lt;std::string, EquipmentType&gt; _type;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_equipment_proto_factory.html#ac6de35115a2c9ddd94d0d79dd7f23d60">setId</a>(<span class="keywordtype">int</span> currentId);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <a class="code" href="class_bike_prototype.html">BikePrototype</a>* _bike;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">static</span> std::map&lt;std::string, EquipmentType&gt; _type;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <a class="code" href="class_treadmill_prototype.html">TreadmillPrototype</a>* _treadmill;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <a class="code" href="class_bike_prototype.html">BikePrototype</a>* _bike;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">int</span> _equipmentId;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;};</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* equipment_proto_factory_hpp */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <a class="code" href="class_treadmill_prototype.html">TreadmillPrototype</a>* _treadmill;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordtype">int</span> _equipmentId;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;};</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* equipment_proto_factory_hpp */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="class_equipment_proto_factory_html_aa5d0da8b143ac289d645a22b26c37569"><div class="ttname"><a href="class_equipment_proto_factory.html#aa5d0da8b143ac289d645a22b26c37569">EquipmentProtoFactory::EquipmentProtoFactory</a></div><div class="ttdeci">EquipmentProtoFactory()</div><div class="ttdoc">Constructor. </div><div class="ttdef"><b>Definition:</b> equipment_proto_factory.cpp:15</div></div>
 <div class="ttc" id="class_equipment_proto_factory_html_a85965709ee05ef53303c9448b35aea60"><div class="ttname"><a href="class_equipment_proto_factory.html#a85965709ee05ef53303c9448b35aea60">EquipmentProtoFactory::getTypes</a></div><div class="ttdeci">std::string getTypes()</div><div class="ttdoc">Get a list of types of equipment available for selection. </div><div class="ttdef"><b>Definition:</b> equipment_proto_factory.cpp:65</div></div>
+<div class="ttc" id="class_equipment_proto_factory_html_ac6de35115a2c9ddd94d0d79dd7f23d60"><div class="ttname"><a href="class_equipment_proto_factory.html#ac6de35115a2c9ddd94d0d79dd7f23d60">EquipmentProtoFactory::setId</a></div><div class="ttdeci">void setId(int currentId)</div><div class="ttdoc">Set the current ID value (used for adding to an existing protocol buffer. </div><div class="ttdef"><b>Definition:</b> equipment_proto_factory.cpp:70</div></div>
 <div class="ttc" id="class_equipment_prototype_html"><div class="ttname"><a href="class_equipment_prototype.html">EquipmentPrototype</a></div><div class="ttdoc">EquipmentPrototype Class. </div><div class="ttdef"><b>Definition:</b> equipment_prototype.hpp:19</div></div>
 <div class="ttc" id="class_treadmill_prototype_html"><div class="ttname"><a href="class_treadmill_prototype.html">TreadmillPrototype</a></div><div class="ttdoc">TreadmillPrototype Class. </div><div class="ttdef"><b>Definition:</b> treadmill_prototype.hpp:20</div></div>
 <div class="ttc" id="class_equipment_proto_factory_html_a18e0b0214b22722e59f80fef954da6e7"><div class="ttname"><a href="class_equipment_proto_factory.html#a18e0b0214b22722e59f80fef954da6e7">EquipmentProtoFactory::getEquipment</a></div><div class="ttdeci">EquipmentPrototype * getEquipment(enum EquipmentType)</div><div class="ttdoc">Returns a new EquipmentPrototype object of the type requested. </div><div class="ttdef"><b>Definition:</b> equipment_proto_factory.cpp:33</div></div>

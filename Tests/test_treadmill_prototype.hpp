@@ -13,5 +13,6 @@
 #include <gtest/gtest.h>
 #include "treadmill_prototype.hpp"
 
+//! Unit tests for the TreadmillPrototype class
 
 #endif /* test_treadmill_prototype_hpp */
