@@ -6,7 +6,8 @@ installing the Exercise Equipment Software.
 
 This project was developed using XCode 7.0.1.
 
-- XCode project files are included for building this application.
+- XCode project files are included for building this application. Open
+ExerciseSoftware.xcodeproj to access the XCode project for building.
 - Building requires Google Protocol Buffers version 2.6.1, see the online
 instructions for installation: https://github.com/google/protobuf
 - After install Protocol buffers, make sure the library included in
