@@ -1,0 +1,44 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "D1E17E76E304F5263E3F00824EA6A9DAD85695ED",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "DBA6F8B12B84878540F44342C4772AC004D85ABD" : 0,
+    "73AF76EB8B93606CF0E51FBA9BBB4E2053E0DC95" : 0,
+    "76A15575C5B740800EF8E92EA66B97A276AEF659" : 0,
+    "D1E17E76E304F5263E3F00824EA6A9DAD85695ED" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "6E05D357-4CD7-4589-A4E5-F53ADA53A937",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "DBA6F8B12B84878540F44342C4772AC004D85ABD" : "packages\/protobuf\/",
+    "73AF76EB8B93606CF0E51FBA9BBB4E2053E0DC95" : "packages\/build-protobuf\/",
+    "76A15575C5B740800EF8E92EA66B97A276AEF659" : "packages\/googletest\/",
+    "D1E17E76E304F5263E3F00824EA6A9DAD85695ED" : "ExerciseSoftware\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "ExerciseSoftware",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "ExerciseSoftware.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/gist.github.com\/7150245.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "73AF76EB8B93606CF0E51FBA9BBB4E2053E0DC95"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/google\/googletest.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "76A15575C5B740800EF8E92EA66B97A276AEF659"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/jorshi\/exercise_software.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D1E17E76E304F5263E3F00824EA6A9DAD85695ED"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/google\/protobuf.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "DBA6F8B12B84878540F44342C4772AC004D85ABD"
+    }
+  ]
+}

@@ -12,12 +12,24 @@
 #include <stdio.h>
 #include "equipment_prototype.hpp"
 
+//! BikePrototype Class
+/*!
+ Used to hold information regarding an exercise bike.
+*/
 class BikePrototype: public EquipmentPrototype
 {
 public:
+    
+    //! Constructor
     BikePrototype();
+    
+    //! Copy Constructor
     BikePrototype(const BikePrototype&);
     
+    //! Clone
+    /*!
+     Returns a new object that is identical to this one
+    */
     EquipmentPrototype* clone() const;
 };
 

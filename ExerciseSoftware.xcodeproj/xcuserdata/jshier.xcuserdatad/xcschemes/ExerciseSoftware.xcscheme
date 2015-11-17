@@ -61,6 +61,12 @@
             ReferencedContainer = "container:ExerciseSoftware.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
+      <CommandLineArguments>
+         <CommandLineArgument
+            argument = "$(PROJECT_DIR)/ProtocolBuffer/Gym_Buffer"
+            isEnabled = "YES">
+         </CommandLineArgument>
+      </CommandLineArguments>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>

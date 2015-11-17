@@ -6,7 +6,7 @@ installing the Exercise Equipment Software.
 
 This project was developed using XCode 7.0.1.
 
-- Building requires Google Protocol Buffers, see the online
+- Building requires Google Protocol Buffers version 2.6.1, see the online
 instructions for installation: https://github.com/google/protobuf
 
 - After install Protocol buffers, make sure the library included in
@@ -15,3 +15,8 @@ the XCode linked binary is correct and the "Header Search Paths" &
 installed.
 
 - Run build in XCode
+
+Testing:
+
+- Google Testing Framework is required to compile and run the unittests
+for this application. Refer 

@@ -102,7 +102,7 @@ void protobuf_AddDesc_exercise_5fequipment_2eproto() {
 
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
     "\n\030exercise_equipment.proto\022\021exercise_pro"
-    "tobuf\"%\n\tEquipment\022\n\n\002id\030\001 \002(\003\022\014\n\004type\030\002"
+    "tobuf\"%\n\tEquipment\022\n\n\002id\030\001 \002(\005\022\014\n\004type\030\002"
     " \002(\t\"6\n\003Gym\022/\n\tequipment\030\001 \003(\0132\034.exercis"
     "e_protobuf.Equipment", 140);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
@@ -147,7 +147,7 @@ Equipment::Equipment(const Equipment& from)
 void Equipment::SharedCtor() {
   ::google::protobuf::internal::GetEmptyString();
   _cached_size_ = 0;
-  id_ = GOOGLE_LONGLONG(0);
+  id_ = 0;
   type_ = const_cast< ::std::string*>(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
@@ -188,7 +188,7 @@ Equipment* Equipment::New() const {
 
 void Equipment::Clear() {
   if (_has_bits_[0 / 32] & 3) {
-    id_ = GOOGLE_LONGLONG(0);
+    id_ = 0;
     if (has_type()) {
       if (type_ != &::google::protobuf::internal::GetEmptyStringAlreadyInited()) {
         type_->clear();
@@ -209,11 +209,11 @@ bool Equipment::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required int64 id = 1;
+      // required int32 id = 1;
       case 1: {
         if (tag == 8) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
+                   ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &id_)));
           set_has_id();
         } else {
@@ -265,9 +265,9 @@ failure:
 void Equipment::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:exercise_protobuf.Equipment)
-  // required int64 id = 1;
+  // required int32 id = 1;
   if (has_id()) {
-    ::google::protobuf::internal::WireFormatLite::WriteInt64(1, this->id(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteInt32(1, this->id(), output);
   }
 
   // required string type = 2;
@@ -290,9 +290,9 @@ void Equipment::SerializeWithCachedSizes(
 ::google::protobuf::uint8* Equipment::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:exercise_protobuf.Equipment)
-  // required int64 id = 1;
+  // required int32 id = 1;
   if (has_id()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteInt64ToArray(1, this->id(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(1, this->id(), target);
   }
 
   // required string type = 2;
@@ -318,10 +318,10 @@ int Equipment::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // required int64 id = 1;
+    // required int32 id = 1;
     if (has_id()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::Int64Size(
+        ::google::protobuf::internal::WireFormatLite::Int32Size(
           this->id());
     }
 

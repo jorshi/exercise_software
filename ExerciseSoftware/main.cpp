@@ -8,28 +8,32 @@
 
 #include <iostream>
 #include <string>
-#include <map>
 #include "equipment_proto_factory.hpp"
 #include "equipment_prototype.hpp"
-#include "exercise_equipment.pb.h"
+#include "protobuf_interface.hpp"
 
 
 int main(int argc, const char * argv[]) {
-    // Verify that the version of the library that we linked against is
-    // compatible with the version of the headers we compiled against.
-    GOOGLE_PROTOBUF_VERIFY_VERSION;
-
+    
+    if (argc != 2)
+    {
+        std::cout << "Must pass in the curret Gym_Buffer file";
+        return 1;
+    }
+    
+    // Initialize variable needed for the main function
     int num;
     int i = 0;
     std::string typeStr;
     EquipmentType type;
     EquipmentProtoFactory equipmentFactory;
-    std::vector<EquipmentPrototype*> equipment;
- 
+    ProtobufInterface protobufInterface(argv[1]);
+    
+    // Set the current ID from last inserted equipment
+    equipmentFactory.setId(protobufInterface.getLastIdValue() + 1);
+
     std::cout << "How many new pieces of equipment would you like to create?" << std::endl;
     std::cin >> num;
-    
-    exercise_protobuf::Gym gym;
     
     while (i < num)
     {
@@ -50,9 +54,12 @@ int main(int argc, const char * argv[]) {
         }
 
         // Create a new equipment object of that type and store
-        equipment.push_back(equipmentFactory.getEquipment(type));
+        EquipmentPrototype* newEquipment = equipmentFactory.getEquipment(type);
+        protobufInterface.addEquipment(newEquipment);
         i++;
     }
-    
+
+    // Write the new additions into the gym message
+    protobufInterface.writeBuffer();
     return 0;
 }

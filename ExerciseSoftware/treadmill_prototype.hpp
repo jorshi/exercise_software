@@ -13,16 +13,27 @@
 #include <string>
 #include "equipment_prototype.hpp"
 
-
-
+//! TreadmillPrototype Class
+/*!
+ Used for holding information regarding a treadmill
+*/
 class TreadmillPrototype: public EquipmentPrototype
 {
 public:
+    
+    //! Constructor
     TreadmillPrototype();
+    
+    //! Copy Constructor
     TreadmillPrototype(const TreadmillPrototype&);
 
+    //! Clone
+    /*!
+     Returns a pointer to a new TreadmillPrototype object that is
+     identical to this one.
+    */
     EquipmentPrototype* clone() const;
-    
+
 };
 
 #endif /* treadmill_prototype_hpp */

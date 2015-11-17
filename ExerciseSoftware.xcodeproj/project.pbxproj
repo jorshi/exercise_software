@@ -21,6 +21,7 @@
 		313E8AD21BF5B2580043641F /* equipment_proto_factory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 313485B51BF4373A00D04B5B /* equipment_proto_factory.cpp */; };
 		313E8AD51BF5B3750043641F /* test_bike_prototype.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 313E8AD31BF5B3750043641F /* test_bike_prototype.cpp */; settings = {ASSET_TAGS = (); }; };
 		313E8AD81BF5B45C0043641F /* test_equipment_proto_factory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 313E8AD61BF5B45C0043641F /* test_equipment_proto_factory.cpp */; settings = {ASSET_TAGS = (); }; };
+		31BC9D6B1BFAC70C00968F39 /* protobuf_interface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 31BC9D691BFAC70C00968F39 /* protobuf_interface.cpp */; settings = {ASSET_TAGS = (); }; };
 		31DE27421BF6D99000CF11D4 /* libprotobuf.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 31DE27401BF6D4D300CF11D4 /* libprotobuf.9.dylib */; };
 		31DE27451BF6DC5B00CF11D4 /* exercise_equipment.pb.cc in Sources */ = {isa = PBXBuildFile; fileRef = 31DE27431BF6DC5B00CF11D4 /* exercise_equipment.pb.cc */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
@@ -66,6 +67,8 @@
 		313E8AD41BF5B3750043641F /* test_bike_prototype.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = test_bike_prototype.hpp; sourceTree = "<group>"; };
 		313E8AD61BF5B45C0043641F /* test_equipment_proto_factory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = test_equipment_proto_factory.cpp; sourceTree = "<group>"; };
 		313E8AD71BF5B45C0043641F /* test_equipment_proto_factory.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = test_equipment_proto_factory.hpp; sourceTree = "<group>"; };
+		31BC9D691BFAC70C00968F39 /* protobuf_interface.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = protobuf_interface.cpp; sourceTree = "<group>"; };
+		31BC9D6A1BFAC70C00968F39 /* protobuf_interface.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = protobuf_interface.hpp; sourceTree = "<group>"; };
 		31DE27401BF6D4D300CF11D4 /* libprotobuf.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libprotobuf.9.dylib; path = ../../../../usr/local/Cellar/protobuf/2.6.1/lib/libprotobuf.9.dylib; sourceTree = "<group>"; };
 		31DE27431BF6DC5B00CF11D4 /* exercise_equipment.pb.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = exercise_equipment.pb.cc; sourceTree = "<group>"; };
 		31DE27441BF6DC5B00CF11D4 /* exercise_equipment.pb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = exercise_equipment.pb.h; sourceTree = "<group>"; };
@@ -125,6 +128,8 @@
 				313485B31BF4297E00D04B5B /* bike_prototype.hpp */,
 				313485B51BF4373A00D04B5B /* equipment_proto_factory.cpp */,
 				313485B61BF4373A00D04B5B /* equipment_proto_factory.hpp */,
+				31BC9D691BFAC70C00968F39 /* protobuf_interface.cpp */,
+				31BC9D6A1BFAC70C00968F39 /* protobuf_interface.hpp */,
 			);
 			path = ExerciseSoftware;
 			sourceTree = "<group>";
@@ -220,6 +225,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31BC9D6B1BFAC70C00968F39 /* protobuf_interface.cpp in Sources */,
 				313485B11BF417DF00D04B5B /* treadmill_prototype.cpp in Sources */,
 				313485A01BF410C500D04B5B /* main.cpp in Sources */,
 				313485AE1BF4178C00D04B5B /* equipment_prototype.cpp in Sources */,

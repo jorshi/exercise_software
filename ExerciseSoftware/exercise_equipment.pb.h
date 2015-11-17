@@ -91,12 +91,12 @@ class Equipment : public ::google::protobuf::Message {
 
   // accessors -------------------------------------------------------
 
-  // required int64 id = 1;
+  // required int32 id = 1;
   inline bool has_id() const;
   inline void clear_id();
   static const int kIdFieldNumber = 1;
-  inline ::google::protobuf::int64 id() const;
-  inline void set_id(::google::protobuf::int64 value);
+  inline ::google::protobuf::int32 id() const;
+  inline void set_id(::google::protobuf::int32 value);
 
   // required string type = 2;
   inline bool has_type() const;
@@ -121,8 +121,8 @@ class Equipment : public ::google::protobuf::Message {
 
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
-  ::google::protobuf::int64 id_;
   ::std::string* type_;
+  ::google::protobuf::int32 id_;
   friend void  protobuf_AddDesc_exercise_5fequipment_2eproto();
   friend void protobuf_AssignDesc_exercise_5fequipment_2eproto();
   friend void protobuf_ShutdownFile_exercise_5fequipment_2eproto();
@@ -219,7 +219,7 @@ class Gym : public ::google::protobuf::Message {
 
 // Equipment
 
-// required int64 id = 1;
+// required int32 id = 1;
 inline bool Equipment::has_id() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -230,14 +230,14 @@ inline void Equipment::clear_has_id() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void Equipment::clear_id() {
-  id_ = GOOGLE_LONGLONG(0);
+  id_ = 0;
   clear_has_id();
 }
-inline ::google::protobuf::int64 Equipment::id() const {
+inline ::google::protobuf::int32 Equipment::id() const {
   // @@protoc_insertion_point(field_get:exercise_protobuf.Equipment.id)
   return id_;
 }
-inline void Equipment::set_id(::google::protobuf::int64 value) {
+inline void Equipment::set_id(::google::protobuf::int32 value) {
   set_has_id();
   id_ = value;
   // @@protoc_insertion_point(field_set:exercise_protobuf.Equipment.id)

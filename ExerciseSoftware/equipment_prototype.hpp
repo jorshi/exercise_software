@@ -12,21 +12,39 @@
 #include <stdio.h>
 #include <string>
 
-
+//! EquipmentPrototype Class
+/*!
+ Abstract Base Class for all Equipment Classes
+*/
 class EquipmentPrototype
 {
-
 public:
+    
+    //! Clone
+    /*!
+     Must be overriden in child class
+    */
     virtual EquipmentPrototype* clone() const = 0;
+    
+    //! Set the type of this equipment
     virtual void setType(std::string);
+    
+    //! Get the type of this equipment
     virtual std::string getType() const;
+    
+    //! Set the id of this equipment
     virtual void setId(int);
+    
+    //! Get the id value for this equipment
     virtual int getId() const;
     
 protected:
+    
+    //! Unique ID value of equipment
     int _id;
+    
+    //! Type of equipment being represented
     std::string _type;
-    std::string _desciption;
 
 };
 
